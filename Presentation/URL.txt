@@ -1,0 +1,11 @@
+function getInfo(){
+	let request = new XMLhttprequest();
+	request.open("GET",http://localhost:8080/ShowAll");
+	let responseString;
+	request.onload=function(){
+		responseString=request response;
+	}
+	request.send();
+	console.log(responseString);
+	
+}

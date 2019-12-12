@@ -1,0 +1,618 @@
+{
+  "id": "bd8894f4-6651-4c4d-a76b-e5df56110b32",
+  "version": "2.0",
+  "name": "Presentation",
+  "url": "http://35.230.137.134:3000",
+  "tests": [{
+    "id": "aa063b80-b339-4da5-8ff2-357a2e4a06ae",
+    "name": "CRUD",
+    "commands": [{
+      "id": "4aa1666b-bba8-4ebb-a452-62fd96abb125",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "61426527-f4ca-40f2-a35f-f1a4d330aeaf",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b530500c-7660-4566-8827-9f851c0ca90d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button:nth-child(1)",
+      "targets": [
+        ["css=.button:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='root']/div/header/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Click To Load Players')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a92e10c-a4f1-49a9-a9ac-0ba789320df3",
+      "comment": "",
+      "command": "click",
+      "target": "id=playername",
+      "targets": [
+        ["id=rating", "id"],
+        ["name=rating", "name"],
+        ["css=#rating", "css:finder"],
+        ["xpath=//input[@id='rating']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/header/div/div[7]/form/input[7]", "xpath:idRelative"],
+        ["xpath=//input[7]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "73dc3c28-4df4-40f1-88e9-2210e8ff68b6",
+      "comment": "",
+      "command": "type",
+      "target": "id=playername",
+      "targets": [],
+      "value": "IsaacTest"
+    }, {
+      "id": "75b3e6f7-4102-48e4-a35e-59ec5a6d61d7",
+      "comment": "",
+      "command": "click",
+      "target": "id=rating",
+      "targets": [
+        ["id=rating", "id"],
+        ["name=rating", "name"],
+        ["css=#rating", "css:finder"],
+        ["xpath=//input[@id='rating']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/header/div/div[7]/form/input[7]", "xpath:idRelative"],
+        ["xpath=//input[7]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "70aa10e2-6b19-4483-9cf3-406e3d67b1a3",
+      "comment": "",
+      "command": "type",
+      "target": "id=rating",
+      "targets": [
+        ["id=rating", "id"],
+        ["name=rating", "name"],
+        ["css=#rating", "css:finder"],
+        ["xpath=//input[@id='rating']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/header/div/div[7]/form/input[7]", "xpath:idRelative"],
+        ["xpath=//input[7]", "xpath:position"]
+      ],
+      "value": "89"
+    }, {
+      "id": "9769dd3c-f5a5-46f9-9882-0afa9b318976",
+      "comment": "",
+      "command": "click",
+      "target": "id=price",
+      "targets": [
+        ["id=price", "id"],
+        ["name=price", "name"],
+        ["css=#price", "css:finder"],
+        ["xpath=//input[@id='price']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/header/div/div[7]/form/input[8]", "xpath:idRelative"],
+        ["xpath=//input[8]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c3a9445-27ee-4dcb-9789-a2dcf7780be7",
+      "comment": "",
+      "command": "type",
+      "target": "id=price",
+      "targets": [
+        ["id=price", "id"],
+        ["name=price", "name"],
+        ["css=#price", "css:finder"],
+        ["xpath=//input[@id='price']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/header/div/div[7]/form/input[8]", "xpath:idRelative"],
+        ["xpath=//input[8]", "xpath:position"]
+      ],
+      "value": "50000"
+    }, {
+      "id": "8a1ab582-7565-4baa-a8c7-b6c16815ec8f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button:nth-child(23)",
+      "targets": [
+        ["css=.button:nth-child(23)", "css:finder"],
+        ["xpath=//div[@id='root']/div/header/div/button", "xpath:idRelative"],
+        ["xpath=//header/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create player')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd5abbf4-17bf-4428-8dcf-68c1427a465b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button:nth-child(1)",
+      "targets": [
+        ["css=.button:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='root']/div/header/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Click To Load Players')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3fb085c-0a63-4240-a895-c94a0881cfbd",
+      "comment": "",
+      "command": "click",
+      "target": "css=form",
+      "targets": [
+        ["css=form", "css:finder"],
+        ["xpath=//div[@id='root']/div/header/div/div[7]/form", "xpath:idRelative"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8f8e917-4d34-46b4-82d2-f219112a9182",
+      "comment": "",
+      "command": "type",
+      "target": "id=position",
+      "targets": [
+        ["id=position", "id"],
+        ["name=position", "name"],
+        ["css=#position", "css:finder"],
+        ["xpath=//input[@id='position']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/header/div/div[7]/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "LB"
+    }, {
+      "id": "9d089001-9530-4a10-a899-5a01eed7c3dd",
+      "comment": "",
+      "command": "click",
+      "target": "css=form",
+      "targets": [
+        ["css=form", "css:finder"],
+        ["xpath=//div[@id='root']/div/header/div/div[7]/form", "xpath:idRelative"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c4bb3bb-833d-4057-8ab4-551c5dbd173b",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=price",
+      "targets": [
+        ["id=price", "id"],
+        ["name=price", "name"],
+        ["css=#price", "css:finder"],
+        ["xpath=//input[@id='price']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/header/div/div[7]/form/input[8]", "xpath:idRelative"],
+        ["xpath=//input[8]", "xpath:position"]
+      ],
+      "value": "93.1353759765625,6.33331298828125"
+    }, {
+      "id": "cffcff83-f73e-4faa-a128-ed16b5f26d3c",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=.formcss",
+      "targets": [
+        ["css=.formcss", "css:finder"],
+        ["xpath=//div[@id='root']/div/header/div/div[7]", "xpath:idRelative"],
+        ["xpath=//header/div/div[7]", "xpath:position"]
+      ],
+      "value": "338.33331298828125,228.85415649414062"
+    }, {
+      "id": "3c66e373-c555-4b5b-b180-0a85ba31b475",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=.formcss",
+      "targets": [
+        ["css=.formcss", "css:finder"],
+        ["xpath=//div[@id='root']/div/header/div/div[7]", "xpath:idRelative"],
+        ["xpath=//header/div/div[7]", "xpath:position"]
+      ],
+      "value": "338.33331298828125,228.85415649414062"
+    }, {
+      "id": "e27e652c-98dd-40ca-8723-8ee557019680",
+      "comment": "",
+      "command": "click",
+      "target": "css=form",
+      "targets": [
+        ["css=form", "css:finder"],
+        ["xpath=//div[@id='root']/div/header/div/div[7]/form", "xpath:idRelative"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d28773e8-ee01-4e98-ab3d-75e88b64d219",
+      "comment": "",
+      "command": "type",
+      "target": "id=price",
+      "targets": [
+        ["id=price", "id"],
+        ["name=price", "name"],
+        ["css=#price", "css:finder"],
+        ["xpath=//input[@id='price']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/header/div/div[7]/form/input[8]", "xpath:idRelative"],
+        ["xpath=//input[8]", "xpath:position"]
+      ],
+      "value": "20000"
+    }, {
+      "id": "92a4375c-108f-4550-b2e3-ab0203fed9d3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.buttons",
+      "targets": [
+        ["css=.buttons", "css:finder"],
+        ["xpath=//div[@id='root']/div/header/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Update player')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d82b3bb-f3d1-468a-a942-0c27bafd8168",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button:nth-child(1)",
+      "targets": [
+        ["css=.button:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='root']/div/header/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Click To Load Players')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "edfc8ad9-dff6-41b1-9836-4a252ecadf31",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button2",
+      "targets": [
+        ["css=.button2", "css:finder"],
+        ["xpath=//div[@id='root']/div/header/div/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Delete player')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "91d576d5-4857-46dd-834d-780fa4564bc3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button:nth-child(1)",
+      "targets": [
+        ["css=.button:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='root']/div/header/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Click To Load Players')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "20ebb4a9-72cf-4589-8d60-956e2297624f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "810b02c4-61f9-4ac5-a4ac-09eb79bb3f0c",
+    "name": "CRUD1",
+    "commands": [{
+      "id": "fa60c1ab-dbf8-4556-a0ca-59db55eb82cb",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "013cc089-a98b-4516-9409-81cb510c23dc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "852x660",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9ff23ce2-e6cb-43d7-baaf-a0c59b3b23d2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button:nth-child(1)",
+      "targets": [
+        ["css=.button:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='root']/div/header/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Click To Load Players')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8298fb92-c8bf-49e4-b7bd-7ef8b562c4e1",
+      "comment": "",
+      "command": "click",
+      "target": "id=playername",
+      "targets": [
+        ["id=playername", "id"],
+        ["name=playername", "name"],
+        ["css=#playername", "css:finder"],
+        ["xpath=//input[@id='playername']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/header/div/div[7]/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2c6e322-7194-4fd8-9a2f-6c4b279444cf",
+      "comment": "",
+      "command": "type",
+      "target": "id=playername",
+      "targets": [
+        ["id=playername", "id"],
+        ["name=playername", "name"],
+        ["css=#playername", "css:finder"],
+        ["xpath=//input[@id='playername']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/header/div/div[7]/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "AutomatedTest"
+    }, {
+      "id": "fcac1ee3-3a6e-4e07-b9c4-a32bbec8e6a5",
+      "comment": "",
+      "command": "type",
+      "target": "id=position",
+      "targets": [
+        ["id=position", "id"],
+        ["name=position", "name"],
+        ["css=#position", "css:finder"],
+        ["xpath=//input[@id='position']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/header/div/div[7]/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "LB"
+    }, {
+      "id": "30a2b9e9-2b91-4b24-aa3f-fbd1c6ffeab4",
+      "comment": "",
+      "command": "type",
+      "target": "id=league",
+      "targets": [
+        ["id=league", "id"],
+        ["name=league", "name"],
+        ["css=#league", "css:finder"],
+        ["xpath=//input[@id='league']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/header/div/div[7]/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "Prem"
+    }, {
+      "id": "90b93e79-7acf-4e5b-bf45-566ea7682240",
+      "comment": "",
+      "command": "type",
+      "target": "id=club",
+      "targets": [
+        ["id=club", "id"],
+        ["name=club", "name"],
+        ["css=#club", "css:finder"],
+        ["xpath=//input[@id='club']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/header/div/div[7]/form/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "Man Utd"
+    }, {
+      "id": "f7c92dd5-f52c-445e-b87a-0a2ee896df5c",
+      "comment": "",
+      "command": "type",
+      "target": "id=nationality",
+      "targets": [
+        ["id=nationality", "id"],
+        ["name=nationality", "name"],
+        ["css=#nationality", "css:finder"],
+        ["xpath=//input[@id='nationality']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/header/div/div[7]/form/input[5]", "xpath:idRelative"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "England"
+    }, {
+      "id": "affe4a5f-58c1-4109-ab5a-2d2dbcc3afe6",
+      "comment": "",
+      "command": "type",
+      "target": "id=quality",
+      "targets": [
+        ["id=quality", "id"],
+        ["name=quality", "name"],
+        ["css=#quality", "css:finder"],
+        ["xpath=//input[@id='quality']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/header/div/div[7]/form/input[6]", "xpath:idRelative"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": "Gold"
+    }, {
+      "id": "48526654-d657-416b-ad34-f5883a5b98f3",
+      "comment": "",
+      "command": "type",
+      "target": "id=rating",
+      "targets": [
+        ["id=rating", "id"],
+        ["name=rating", "name"],
+        ["css=#rating", "css:finder"],
+        ["xpath=//input[@id='rating']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/header/div/div[7]/form/input[7]", "xpath:idRelative"],
+        ["xpath=//input[7]", "xpath:position"]
+      ],
+      "value": "99"
+    }, {
+      "id": "d7802028-7269-4b05-acbb-d25b4e72bda8",
+      "comment": "",
+      "command": "type",
+      "target": "id=price",
+      "targets": [
+        ["id=price", "id"],
+        ["name=price", "name"],
+        ["css=#price", "css:finder"],
+        ["xpath=//input[@id='price']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/header/div/div[7]/form/input[8]", "xpath:idRelative"],
+        ["xpath=//input[8]", "xpath:position"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "e8b6b8c1-596f-43b3-8ca1-5cc24e74498e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button:nth-child(23)",
+      "targets": [
+        ["css=.button:nth-child(23)", "css:finder"],
+        ["xpath=//div[@id='root']/div/header/div/button", "xpath:idRelative"],
+        ["xpath=//header/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create player')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "29ffc7c3-0c54-4c12-a3e6-ce8a9e0e19f1",
+      "comment": "",
+      "command": "click",
+      "target": "css=form",
+      "targets": [
+        ["css=form", "css:finder"],
+        ["xpath=//div[@id='root']/div/header/div/div[7]/form", "xpath:idRelative"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba3e4d90-3a02-49c0-96e8-3d5477a726f6",
+      "comment": "",
+      "command": "type",
+      "target": "id=position",
+      "targets": [
+        ["id=position", "id"],
+        ["name=position", "name"],
+        ["css=#position", "css:finder"],
+        ["xpath=//input[@id='position']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/header/div/div[7]/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "RB"
+    }, {
+      "id": "bd5e5099-6b1f-4b46-9ffe-ffe91d95076c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.buttons",
+      "targets": [
+        ["css=.buttons", "css:finder"],
+        ["xpath=//div[@id='root']/div/header/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Update player')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9200f906-19b4-4212-b5d0-4444a78501cd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.formcss",
+      "targets": [
+        ["css=.formcss", "css:finder"],
+        ["xpath=//div[@id='root']/div/header/div/div[7]", "xpath:idRelative"],
+        ["xpath=//header/div/div[7]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d4f25d9-7807-4603-87ad-b8ec3c3e00c4",
+      "comment": "",
+      "command": "type",
+      "target": "id=playername",
+      "targets": [
+        ["id=playername", "id"],
+        ["name=playername", "name"],
+        ["css=#playername", "css:finder"],
+        ["xpath=//input[@id='playername']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/header/div/div[7]/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Jose"
+    }, {
+      "id": "27c0c180-fa8c-4350-bec3-92ffac264add",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button:nth-child(23)",
+      "targets": [
+        ["css=.button:nth-child(23)", "css:finder"],
+        ["xpath=//div[@id='root']/div/header/div/button", "xpath:idRelative"],
+        ["xpath=//header/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create player')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a45e7cc0-5080-42bc-959f-e4f68de94991",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button2",
+      "targets": [
+        ["css=.button2", "css:finder"],
+        ["xpath=//div[@id='root']/div/header/div/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Delete player')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4e3d1b3-44ec-4d61-88a4-45b6af8d8561",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button:nth-child(1)",
+      "targets": [
+        ["css=.button:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='root']/div/header/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Click To Load Players')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ac2e25d-42a7-44a5-af45-08338016671d",
+      "comment": "",
+      "command": "click",
+      "target": "id=playername",
+      "targets": [
+        ["id=playername", "id"],
+        ["name=playername", "name"],
+        ["css=#playername", "css:finder"],
+        ["xpath=//input[@id='playername']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/header/div/div[7]/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0704cc8-3f06-4833-ae96-7d0d3289ab4a",
+      "comment": "",
+      "command": "type",
+      "target": "id=playername",
+      "targets": [
+        ["id=playername", "id"],
+        ["name=playername", "name"],
+        ["css=#playername", "css:finder"],
+        ["xpath=//input[@id='playername']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/header/div/div[7]/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "AutomatedTest"
+    }, {
+      "id": "02e0dd7a-4088-40a3-bd32-b2cc04bbe8a4",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.button:nth-child(1)",
+      "targets": [
+        ["css=.button:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='root']/div/header/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Click To Load Players')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "13bb24b0-c6cb-446d-a548-bf936b06c496",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.button:nth-child(1)",
+      "targets": [
+        ["css=.button:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='root']/div/header/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Click To Load Players')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "45d6bf72-a6bb-4f46-8dd0-fd65397a03e3",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://35.230.137.134:3000/"],
+  "plugins": []
+}

@@ -1,0 +1,39 @@
+DevOps explained - Isaac Douglas
+                              TechAcademy - Chris Perrins - 02/10/2019
+
+I will be covering:
+- Benefits of DevOps
+- Problems DevOps solves
+- Dev vs Ops
+- Deep dive into 3 tools used
+
+What are the benefits of DevOps:
+- Increases team collaboration
+- Removes barriers
+- Removes siloes
+- Increased automation
+- Increases the deployment speed and process efficiency
+- Helps promote and encourage change and innovation
+- Reduces risk
+- Removes duplication
+- Encourages LEAN and AGILE
+- Looped in live 360 feedback
+- Continuous integration
+
+What are the problems it solves:
+Devops automates the processes between software development and IT teams, in order that they can build, test, and release software faster and more reliably. They help break down teams working in siloes, build collaboration and harmonise the differences between CHANGE and RUN.
+
+What is Dev vs Ops?
+Development and innovation teams versus operational teams. CHANGE vs RUN. Battling to meet the business demand by juggling  operational enhancements whilst also keeping the lights running operationally at the same time.
+
+
+Analysis of 3 tools used in ‘DevOps’:
+1. Visual Studio - Compile and build projects.
+2. Maven - Development and testing.
+3. JUnit - automation server (part of Jenkins) makes testing easier and more automated.
+
+Conclusion:
+DevOps is a newly formed method of working which can help break down barriers across siloed teams and come to solutions quicker. Many companies are still slow to incorporate this but moving forward many will adopt this approach to encourage change and innovation but also to identify risks and business demand simultaneously.
+
+
+For submission, I am slacking you my essay.

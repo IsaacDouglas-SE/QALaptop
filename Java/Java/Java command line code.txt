@@ -1,0 +1,38 @@
+
+C:\Users\admin\Desktop\Java>dir
+ Volume in drive C is Windows
+ Volume Serial Number is FEED-EB72
+
+ Directory of C:\Users\admin\Desktop\Java
+
+27/09/2019  10:28    <DIR>          .
+27/09/2019  10:28    <DIR>          ..
+27/09/2019  10:28               134 First.java
+27/09/2019  10:27                 0 New Text Document.txt
+               2 File(s)            134 bytes
+               2 Dir(s)  66,692,911,104 bytes free
+
+C:\Users\admin\Desktop\Java>javac First.java
+
+C:\Users\admin\Desktop\Java>dir
+ Volume in drive C is Windows
+ Volume Serial Number is FEED-EB72
+
+ Directory of C:\Users\admin\Desktop\Java
+
+27/09/2019  10:29    <DIR>          .
+27/09/2019  10:29    <DIR>          ..
+27/09/2019  10:29               436 First.class
+27/09/2019  10:28               134 First.java
+27/09/2019  10:27                 0 New Text Document.txt
+               3 File(s)            570 bytes
+               2 Dir(s)  66,692,907,008 bytes free
+
+C:\Users\admin\Desktop\Java>java First.class
+Error: Could not find or load main class First.class
+
+C:\Users\admin\Desktop\Java>java First
+Hello
+my friend
+
+C:\Users\admin\Desktop\Java>

@@ -1,0 +1,472 @@
+
+SQLcl: Release 4.2.0.16.153.2014 RC on Thu Sep 26 03:46:41 2019
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+Username? (''?) HR
+Password? (**********?) ******
+Last Successful login time: Thu Sep 26 2019 03:47:01 -04:00
+
+Connected to:
+Oracle Database 12c Enterprise Edition Release 12.1.0.2.0 - 64bit Production
+With the Partitioning, OLAP, Advanced Analytics and Real Application Testing options
+
+
+SQL> describe books;
+Name  Null?    Type      
+----- -------- --------- 
+BID   NOT NULL NUMBER(3) 
+TITLE          CHAR(30)  
+SQL> select * from books;
+no rows selected
+SQL> create table consultants2(
+  2  REgno number(3),
+  3  Name char(20),
+  4  MArks number(3),
+  5  salary number(7,2),
+  6  subject char(20),
+  7  CLient char(10)
+  8  );
+
+Table CONSULTANTS2 created.
+
+SQL> describe Bank;
+
+ERROR:
+ORA-04043: object Bank does not exist
+SQL> select member_name from employees;
+
+Error starting at line : 1 in command -
+select member_name from employees
+Error at Command Line : 1 Column : 8
+Error report -
+SQL Error: ORA-00904: "MEMBER_NAME": invalid identifier
+00904. 00000 -  "%s: invalid identifier"
+*Cause:    
+*Action:
+SQL> describe employees;
+Name           Null?    Type         
+-------------- -------- ------------ 
+EMPLOYEE_ID    NOT NULL NUMBER(6)    
+FIRST_NAME              VARCHAR2(20) 
+LAST_NAME      NOT NULL VARCHAR2(25) 
+EMAIL          NOT NULL VARCHAR2(25) 
+PHONE_NUMBER            VARCHAR2(20) 
+HIRE_DATE      NOT NULL DATE         
+JOB_ID         NOT NULL VARCHAR2(10) 
+SALARY                  NUMBER(8,2)  
+COMMISSION_PCT          NUMBER(2,2)  
+MANAGER_ID              NUMBER(6)    
+DEPARTMENT_ID           NUMBER(4)    
+SQL> select first_name from employees;
+
+FIRST_NAME          
+--------------------
+Ellen               
+Sundar              
+Mozhe               
+David               
+Hermann             
+Shelli              
+Amit                
+Elizabeth           
+Sarah               
+David               
+Laura               
+Harrison            
+Alexis              
+Anthony             
+Gerald              
+Nanette             
+John                
+Kelly               
+Karen               
+Curtis              
+Lex                 
+
+FIRST_NAME          
+--------------------
+Julia               
+Jennifer            
+Louise              
+Bruce               
+Alberto             
+Britney             
+Daniel              
+Pat                 
+Kevin               
+Jean                
+Tayler              
+Adam                
+Timothy             
+Ki                  
+Girard              
+William             
+Douglas             
+Kimberely           
+Nancy               
+Danielle            
+Peter               
+
+FIRST_NAME          
+--------------------
+Michael             
+Shelley             
+Guy                 
+Alexander           
+Alyssa              
+Charles             
+Vance               
+Payam               
+Alexander           
+Janette             
+Steven              
+Neena               
+Sundita             
+Renske              
+James               
+David               
+Jack                
+Diana               
+Jason               
+Steven              
+James               
+
+FIRST_NAME          
+--------------------
+Mattea              
+Randall             
+Susan               
+Samuel              
+Allan               
+Irene               
+Kevin               
+Julia               
+Donald              
+Christopher         
+TJ                  
+Lisa                
+Karen               
+Valli               
+Joshua              
+Randall             
+Hazel               
+Luis                
+Trenna              
+Den                 
+Michael             
+
+FIRST_NAME          
+--------------------
+John                
+Nandita             
+Ismael              
+John                
+Sarath              
+Lindsey             
+William             
+Stephen             
+Martha              
+Patrick             
+Jonathon            
+Winston             
+Sigal               
+Peter               
+Oliver              
+Jose Manuel         
+Peter               
+Clara               
+Shanta              
+Alana               
+Matthew             
+
+FIRST_NAME          
+--------------------
+Jennifer            
+Eleni               
+
+107 rows selected. 
+
+SQL> Describe first_name from employees;
+Usage: DESCRIBE [schema.]object[@db_link]
+SQL> describe first_ name employees;
+Usage: DESCRIBE [schema.]object[@db_link]
+SQL> Select first_name AS Name from employees;
+
+NAME                
+--------------------
+Ellen               
+Sundar              
+Mozhe               
+David               
+Hermann             
+Shelli              
+Amit                
+Elizabeth           
+Sarah               
+David               
+Laura               
+Harrison            
+Alexis              
+Anthony             
+Gerald              
+Nanette             
+John                
+Kelly               
+Karen               
+Curtis              
+Lex                 
+
+NAME                
+--------------------
+Julia               
+Jennifer            
+Louise              
+Bruce               
+Alberto             
+Britney             
+Daniel              
+Pat                 
+Kevin               
+Jean                
+Tayler              
+Adam                
+Timothy             
+Ki                  
+Girard              
+William             
+Douglas             
+Kimberely           
+Nancy               
+Danielle            
+Peter               
+
+NAME                
+--------------------
+Michael             
+Shelley             
+Guy                 
+Alexander           
+Alyssa              
+Charles             
+Vance               
+Payam               
+Alexander           
+Janette             
+Steven              
+Neena               
+Sundita             
+Renske              
+James               
+David               
+Jack                
+Diana               
+Jason               
+Steven              
+James               
+
+NAME                
+--------------------
+Mattea              
+Randall             
+Susan               
+Samuel              
+Allan               
+Irene               
+Kevin               
+Julia               
+Donald              
+Christopher         
+TJ                  
+Lisa                
+Karen               
+Valli               
+Joshua              
+Randall             
+Hazel               
+Luis                
+Trenna              
+Den                 
+Michael             
+
+NAME                
+--------------------
+John                
+Nandita             
+Ismael              
+John                
+Sarath              
+Lindsey             
+William             
+Stephen             
+Martha              
+Patrick             
+Jonathon            
+Winston             
+Sigal               
+Peter               
+Oliver              
+Jose Manuel         
+Peter               
+Clara               
+Shanta              
+Alana               
+Matthew             
+
+NAME                
+--------------------
+Jennifer            
+Eleni               
+
+107 rows selected. 
+
+SQL> select first_name from employees Where name = 'Peter';
+
+Error starting at line : 1 in command -
+select first_name from employees Where name = 'Peter'
+Error at Command Line : 1 Column : 40
+Error report -
+SQL Error: ORA-00904: "NAME": invalid identifier
+00904. 00000 -  "%s: invalid identifier"
+*Cause:    
+*Action:
+SQL> select first_name from employees Where first_name = 'Peter';
+
+FIRST_NAME          
+--------------------
+Peter               
+Peter               
+Peter               
+
+SQL> select Last_name from employees Where first_name = 'Peter';
+
+LAST_NAME                
+-------------------------
+Hall                     
+Tucker                   
+Vargas                   
+
+SQL> select Last_name AS surname from employees Where first_name = 'Peter';
+
+SURNAME                  
+-------------------------
+Hall                     
+Tucker                   
+Vargas                   
+
+SQL> select count(Last_name) AS surname from employees Where first_name = 'Peter';
+
+   SURNAME
+----------
+         3
+
+
+SQL> connect;
+Password? (**********?) ******
+Connected.
+SQL> create user Isaac identified by tDp;
+
+User ISAAC created.
+
+SQL> Grant DBA to ISaac;
+
+Grant succeeded.
+
+SQL> GRant resource;
+
+Error starting at line : 1 in command -
+GRant resource
+Error report -
+ORA-00990: missing or invalid privilege
+00990. 00000 -  "missing or invalid privilege"
+*Cause:    
+*Action:
+SQL> grant resource to Isaac;
+
+Grant succeeded.
+
+SQL> Create Role Troops, Grant create user to Isaac;
+
+Error starting at line : 1 in command -
+Create Role Troops, Grant create user to Isaac
+Error report -
+ORA-00922: missing or invalid option
+00922. 00000 -  "missing or invalid option"
+*Cause:    
+*Action:
+SQL> Create Role Troops, create user table;
+
+Error starting at line : 1 in command -
+Create Role Troops, create user table
+Error report -
+ORA-00922: missing or invalid option
+00922. 00000 -  "missing or invalid option"
+*Cause:    
+
+
+SQL> Create Role Troops grant create user create table;
+Error starting at line : 1 in command -
+Create Role Troops grant create user create table
+Error report -
+ORA-00922: missing or invalid option
+00922. 00000 -  "missing or invalid option"
+*Cause:    
+
+
+SQL> Create Role Troops grant create user create table to Isaac;
+Error starting at line : 1 in command -
+Create Role Troops grant create user create table to Isaac
+Error report -
+ORA-00922: missing or invalid option
+00922. 00000 -  "missing or invalid option"
+*Cause:    
+
+
+SQL> Create Role Troops, grant user table to Troops;
+Error starting at line : 1 in command -
+Create Role Troops, grant user table to Troops
+Error report -
+ORA-00922: missing or invalid option
+00922. 00000 -  "missing or invalid option"
+*Cause:    
+
+
+SQL> Create Role Troops, grant create user, create table to TRoops;
+Error starting at line : 1 in command -
+Create Role Troops, grant create user, create table to TRoops
+Error report -
+ORA-00922: missing or invalid option
+00922. 00000 -  "missing or invalid option"
+*Cause:    
+
+
+SQL> Create Role Troops, grant create user to troops;
+Error starting at line : 1 in command -
+Create Role Troops, grant create user to troops
+Error report -
+ORA-00922: missing or invalid option
+00922. 00000 -  "missing or invalid option"
+*Cause:    
+
+
+SQL> Create Role Troops, Grant create user to troops;
+Error starting at line : 1 in command -
+Create Role Troops, Grant create user to troops
+Error report -
+ORA-00922: missing or invalid option
+00922. 00000 -  "missing or invalid option"
+*Cause:    
+
+
+SQL> Create Role Troops;
+Role TROOPS created.
+
+SQL> GRant create user, create table to TRoops;
+
+Grant succeeded.
+
+SQL> GRant TRoops to Isaac;
+
+Grant succeeded.
+
+SQL> 

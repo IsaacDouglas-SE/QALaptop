@@ -1,0 +1,9 @@
+class QAMaths{
+	public static void main(String XYZ[]);
+	int No1,No2;
+	float Result;
+	String Sign;
+	try{
+		
+	}
+}

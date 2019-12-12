@@ -1,0 +1,55 @@
+<html>
+<head>
+</head>
+<body>
+<form onsubmit="return postData(this)">
+<input name="name" type="text" placeholder="enter name">
+<input name="colour" type="text" placeholder="enter colour">
+<input type="submit">
+</form>
+<ol> id = "List">
+</ol>
+<script>
+function getInfo(){
+	let request = new XMLHttpRequest();
+	request.open("GET",URL);
+	request.onload=function(){
+		renderData(JSON.parse(request.response));
+		console.log(request.response);
+	}
+	request.send();
+}
+getInfo();
+function renderData(jsData){
+	let list = document.getElementById("List");
+	list.innerHtml="";
+	for(let person of jsData){
+		let list.item = document.createElement("Li");
+		list.item innerText  = person;
+		list appendChild(list.item);
+		
+	}
+}
+function postData(form){
+	let body={};
+	for(let inputty of form){
+		if(inputty.name){
+			body[inputty.name]=inputty.value;
+		}
+	}
+	let body = JSON.stringify(body);
+	let request = new XMLHttpRequest();
+	request.open("Post",URL);
+	request.onload=function(){
+		getInfo();
+		
+	}
+	request.send(body);
+	/* for(let inputty of form){
+		console.log(inputty.name+":"+inputty.value); */
+	
+	return false;
+}
+</script>
+</body>
+</html>

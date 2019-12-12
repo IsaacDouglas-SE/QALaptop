@@ -1,0 +1,21 @@
+<HTML>
+<form action="process.html" method="Post" onSubmit ="return checkValues()">
+	Regno:<input type="text" id="Regno" Name="Regno1">
+	Name:<input type="text" id="N" Name="sname">
+	<input type="submit">
+</form>
+	<script>
+		function checkValues(){
+			var Ref1=document.getElementById("Regno");
+			var Ref2=document.getElementById("N");
+				if(Ref1.value==""){
+					alert("Registration number is missing");
+					return false;
+				}
+				else if(Ref2.value==""){
+				alert("Name is missing");
+				return false;
+				}
+		}
+	</script>
+</HTML>

@@ -1,0 +1,40 @@
+<html>
+<script>
+	function dosomething(){
+		var X = window.event.clientX;
+		var Y = window.event.clientY;
+		var Ref1 = window.document.getElementById("nbs");
+		Ref1.style.top=Y;
+		Ref1.style.left=X;
+		console.log()
+}
+function mouseOver() {
+  document.getElementById("demo").style.color = "red";
+}
+function mouseOut() {
+  document.getElementById("demo").style.color = "black";
+}
+function dosomething3(){
+
+}
+</script>
+<Body >
+<div id="demo" onmouseover="mouseOver()" onmouseout="mouseOut()">Mouse over me>
+<span style="background-color: Red" id="demo">
+<button id="demo" style ="color:Red" onmouseover="mouseOver()" onmouseout="mouseOut()">Red</button>
+</div>
+<div onmousemove="dosomething2()">
+<span style="background-color: Green" id="nbs2">
+<button style ="color:Green" onmousemove="clicker()">Green</button>
+</div>
+<div onmousemove="dosomething3()">
+<span style="background-color: Blue" id="nbs3">
+<button style ="color:Blue" onmousemove="clicker()">Blue</button>
+</div>
+	<div onmousemove="dosomething()">
+		<span style="position:absolute;top:0;left:0" id="nbs">
+			*
+			<button style ="color:blue" onclick="clicker()">cursor</button>
+		</span>
+	</div>
+</body>

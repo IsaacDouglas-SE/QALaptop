@@ -1,0 +1,21 @@
+<html>
+<script>
+function dosomething(){
+	var X = window.event.clientX;
+	var Y = window.event.clientY;
+	var Ref1 = window.event.getElementById("nbs");
+
+	Ref1.style.top=Y;
+	Ref1.style.left=X;
+}
+function TakeTheTest(){
+	var data=window.document.getElementById("screen").value;
+	window.document.getElementById("nbs").innerHTML=data;
+}
+</script>
+	<Body onmousemove="dosomething()">
+		<span id="nbs" style="Position:absolute;top=0;left=0">
+			nationwide
+		</span>
+		<input type="text" id="screen" onmovecenter="TakeTheTest()">
+</Body>

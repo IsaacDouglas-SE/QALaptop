@@ -1,0 +1,3 @@
+   playerlist.playername = playername;
+         playerlist.trainer.surname = surname;
+        var trainerJSON = JSON.stringify(trainer);

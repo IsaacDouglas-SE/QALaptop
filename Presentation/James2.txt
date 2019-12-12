@@ -1,0 +1,46 @@
+  101  npm install
+  102  npm start
+  103  ls#
+  104  ls
+  105  cd /var/www/html/
+  106  ls
+  107  cat index.html 
+  108  echo "Hello" > index.html 
+  109  ls
+  110  cd ~/my-app/
+  111  ls
+  112  npm start
+  113  ls
+  114  cd ..
+  115  ls
+  116  sudo service jenkins status
+  117  sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+  118  history
+  119  ls
+  120  cd my-app
+  121  ls
+  122  cd public
+  123  ls
+  124  ll
+  125  sudo chmod 777 html/
+  126  l
+  127  ll
+  128  ls
+  129  ll
+  130  cd html/
+  131  cd index.html
+  132  users
+  133  cp -r ./* /var/www/html/
+  134  rm -r ./* /var/www/html/
+  135  ls
+  136  cd ~
+  137  ls
+  138  cd my-app/
+  139  ls
+  140  cd ..
+  141  cd /var/www/html/
+  142  ls
+  143  cd ~
+  144  cd my-app/
+  145  ls
+  146  history

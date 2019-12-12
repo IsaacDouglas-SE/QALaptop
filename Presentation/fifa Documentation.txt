@@ -1,0 +1,21 @@
+C - Create a new squad
+Post R - Add player into squad
+Put U - Update the player kit number
+Delete D - Delete player from squad
+
+
+Alter table, add kit number, unique ID
+
+Connection
+
+Server-port:localhost:9090 (rerouted 3306)
+username:root
+password:root
+
+MYSQL database tables
+Database:Fifa
+Tablename: fifa
+
+Spring project FIFA
+packages - Controllers, Data, Services & mainapp.java
+

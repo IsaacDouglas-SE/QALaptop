@@ -1,0 +1,94 @@
+{
+  "id": "a955b1d8-bbe2-4957-b6b9-758b259a8e14",
+  "version": "2.0",
+  "name": "quick-demo",
+  "url": "http://35.230.137.134:3000",
+  "tests": [{
+    "id": "cf74f1c6-17d6-49be-802c-0cfaab5b31cd",
+    "name": "test1",
+    "commands": [{
+      "id": "4068e6a9-9c8b-4273-9083-0c20e9fdb694",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "643fb81c-749c-4c85-8130-8fdcc8539296",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "852x660",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7b917f82-aaf4-4cea-b1d6-18c8f7405d45",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button:nth-child(1)",
+      "targets": [
+        ["css=.button:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='root']/div/header/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Click To Load Players')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "536bbdba-88ef-4faf-96a0-34b702fe4d59",
+      "comment": "",
+      "command": "click",
+      "target": "id=playername",
+      "targets": [
+        ["id=playername", "id"],
+        ["name=playername", "name"],
+        ["css=#playername", "css:finder"],
+        ["xpath=//input[@id='playername']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/header/div/div[7]/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8d43ae1-2943-4cc0-b1b2-7e60d813c0c4",
+      "comment": "",
+      "command": "type",
+      "target": "id=playername",
+      "targets": [
+        ["id=playername", "id"],
+        ["name=playername", "name"],
+        ["css=#playername", "css:finder"],
+        ["xpath=//input[@id='playername']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/header/div/div[7]/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Jose"
+    }, {
+      "id": "2bb6c6cf-8a26-49c1-a6dc-685c884dc824",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button:nth-child(24)",
+      "targets": [
+        ["css=.button:nth-child(24)", "css:finder"],
+        ["xpath=//div[@id='root']/div/header/div/button", "xpath:idRelative"],
+        ["xpath=//header/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create player')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "42fefc39-9a1e-4fa0-a275-3ec3f4f5e29a",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "38549a63-48d4-4c99-9825-46fd31f74cc4",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["cf74f1c6-17d6-49be-802c-0cfaab5b31cd"]
+  }],
+  "urls": ["http://35.230.137.134:3000/"],
+  "plugins": []
+}

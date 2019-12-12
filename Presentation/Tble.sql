@@ -1,0 +1,1 @@
+alter table fifa drop id

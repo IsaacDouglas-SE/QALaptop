@@ -1,0 +1,68 @@
+<html>
+  <center>
+    Logged into Nationwide Building Society
+    
+    <br>
+     <u>Admin</u>
+    <br>
+    <br>
+    <form action="/LoggedIn">
+        <br>
+      <input type="button" href="/user" value="Add user"/>  <input type="button" href="/user" value="Edit user"/>
+    </form> 
+  </center>
+  <head>
+      <style>
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+      
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+      </style>
+      </head>
+      <body>
+      
+        <center> <h2>User Table</h2></center>
+      
+      <table>
+        <tr>
+          <th>Empno</th>
+          <th>Name</th>
+          <th>Address</th>
+        </tr>
+        <% results.forEach(function(el, index) {
+          {
+
+              %>
+          <tr>
+
+                  <td><%=el.empno%></td>
+                  <td><%=el.Name%></td>
+                  <td><%=el.Address%></td>
+
+                  <td>
+                      <% if(role==1){
+                          %>
+                   </td>
+
+                      <% } %>
+                </tr>
+              <%
+          }
+       }) %>
+    </table>
+  </center>
+
+
+
+</html>

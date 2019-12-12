@@ -1,0 +1,41 @@
+cd ~
+   22  git clone https://github.com/christophperrins/simple-project.git
+   23  cd /var/www/html
+   24  ls
+   25  cd ~
+   26  ls
+   27  cd simple-project/
+   28  ls
+   29  cd client/
+   30  ls
+   31  cd public-html/
+   32  ls
+   33  cp index.html /var/www/html/
+   34  cp ./* /var/www/html/
+   35  clear
+   36  cd ~
+   37  cd simple-project/server/
+   38  ls
+   39  sudo apt install -y openjdk-8-jdk
+   40  sudo apt install -y maven
+   41  sudo apt update
+   42  sudo apt install -y maven
+   43  java -version
+   44  mvn --version
+   45  mvn package -DskipTests
+   46  ls
+   47  cd target
+   48  ls
+   49  java -jar notes.jar
+   50  cd ~
+   51  ll
+   52  exit
+   53  sudo apt list --installed | grep mongodb
+   54  sudo apt list --installed
+   55  wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt-key add -
+   56  echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/4.2 multiverse" | sudo tee /e
+tc/apt/sources.list.d/mongodb-org-4.2.list
+   57  sudo apt-get update
+   58  sudo apt-get install -y mongodb-org
+   59  sudo service mongod start
+   60  [initandlisten] waiting for connections on port 27017

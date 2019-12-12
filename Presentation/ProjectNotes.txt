@@ -1,0 +1,38 @@
+1.Intro
+Isaac Douglas - internal employee with history of data type roles
+
+2. Wireframe - Draw.io -> Balsamiq
+
+3. Trello
+
+4. System linkage
+
+5. Creating the project
+
+6. GitHub
+
+7. Demo app on cloud
+
+8. What went well 
+
+8.1 Personally
+- Finishing ahead of schedule
+- Bouncing ideas and troubleshooting with colleagues
+
+8.2 Technically
+
+9. What didn't go well
+
+9.1 Personally
+
+9.2 Technically
+
+10. Could go better in future
+
+10.1 Personally
+
+10.2 Technically
+
+11. Transferrable skills
+
+background-size 100%

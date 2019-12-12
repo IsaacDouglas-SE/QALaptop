@@ -1,0 +1,169 @@
+
+SQL> Create Table School(
+  2  RegNo(2),
+  3  Name Char(30),
+  4  Marks number(3)
+  5  );
+
+Error starting at line : 1 in command -
+Create Table School(
+RegNo(2),
+NAme Char(30),
+MArks number(3)
+)
+Error report -
+ORA-00902: invalid datatype
+00902. 00000 -  "invalid datatype"
+*Cause:    
+*Action:
+SQL> create table school(
+  2  RegNo number(2),
+  3  NAme char(30),
+  4  MArks number(3)
+  5  );
+
+Error starting at line : 1 in command -
+
+SQL> Create Table Tesco(
+  2  Product char(20),
+  3  Quantity number(2),
+  4  Price number(5,2)
+  5  );
+
+Table TESCO created.
+
+SQL> insert into tesco values ('7up',10,1.25);
+
+1 row inserted.
+
+SQL> insert into tesco values ('coke',15,2.0);
+
+1 row inserted.
+
+SQL> select product,quantity*price as amount,
+  2  (Quantity*PRice)*15/100 as vat,
+  3  (Quantity*price)+(quantity*price)*15/100) as bill from tesco;
+
+
+SQL> Select product, quantity*price as amount,
+  2  (quantity*price)*15/100 as VAT,
+  3  (quantity*price)+(quantity*price)*15/100 as bill
+  4* from tesco;
+PRODUCT                  AMOUNT        VAT       BILL
+-------------------- ---------- ---------- ----------
+7up                        12.5      1.875     14.375
+coke                         30        4.5       34.5
+
+SQL> describe school
+Name  Null? Type      
+----- ----- --------- 
+REGNO       NUMBER(2) 
+NAME        CHAR(30)  
+MARKS       NUMBER(3) 
+SQL> 
+
+Java consultants working with IBM with over 80 marks
+
+SQL> Create table Consultants(
+  2  Regno number(3),
+  3  name char(30),
+  4  marks number(3),
+  5  subject char(20),
+  6  client char(30)
+  7  );
+
+Table CONSULTANTS created.
+
+
+SQL> insert into consultants values(1,'Peter',75,'Java','IBM');
+
+1 row inserted.
+
+SQL> Select * from consultants where marks>70 AND client='IBM' AND subject='Java';
+     REGNO NAME                                MARKS SUBJECT
+---------- ------------------------------ ---------- --------------------
+CLIENT                        
+------------------------------
+         1 Peter                                  75 Java                 
+IBM                           
+
+
+SQL> Select * from consultants where marks<70 AND client='IBM';
+no rows selected
+
+
+SQL> select product, (price_sold-price_purchased)*qty_sold from asda where product='7up';
+
+PRODUCT              (PRICE_SOLD-PRICE_PURCHASED)*QTY_SOLD
+-------------------- -------------------------------------
+7up                                                      5
+
+
+SQL> (1.75-1.25)*10;
+Error starting at line : 1 in command -
+(1.75-1.25)*10
+Error at Command Line : 1 Column : 2
+Error report -
+SQL Error: ORA-00928: missing SELECT keyword
+00928. 00000 -  "missing SELECT keyword"
+*Cause:    
+*Action:
+SQL> select product, (price_sold-price_purchased)*qty_sold as profit from asda;
+
+PRODUCT                  PROFIT
+-------------------- ----------
+7up                           5
+coke                          9
+
+SQL> select * from consultants where client in('IBM','ONS');
+
+     REGNO NAME                                MARKS SUBJECT
+---------- ------------------------------ ---------- --------------------
+CLIENT                        
+------------------------------
+         1 Peter                                  75 Java                 
+IBM                           
+
+
+SQL> select name from consultants where client in('IBM','ONS');
+
+NAME                          
+------------------------------
+Peter                         
+
+SQL> select * from consutlants where marks>=50 and makrs<=90;
+
+Error starting at line : 1 in command -
+select * from consutlants where marks>=50 and makrs<=90
+Error at Command Line : 1 Column : 15
+Error report -
+SQL Error: ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> select * from consultants where marks>=50 and marks<=90;
+
+     REGNO NAME                                MARKS SUBJECT
+---------- ------------------------------ ---------- --------------------
+CLIENT                        
+------------------------------
+         1 Peter                                  75 Java                 
+IBM                           
+
+
+SQL> select * from consultants where marks between 50 and 90;
+
+     REGNO NAME                                MARKS SUBJECT
+---------- ------------------------------ ---------- --------------------
+CLIENT                        
+------------------------------
+         1 Peter                                  75 Java                 
+IBM                           
+
+
+SQL> select distinct name from consultants;
+
+NAME                          
+------------------------------
+Peter                         
+

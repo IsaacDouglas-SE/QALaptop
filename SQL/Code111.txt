@@ -1,0 +1,25 @@
+create or replace procedure CopyREcords(A number)
+   IS
+  cursor records is select first_name,salary,department_id,employee_id from employees;
+  fname employees.first_name%type;
+  salary employees.salary%type;
+   eno employees.employee_id%type;
+    dno employees.department_id%type;
+    Begin
+    Open records;
+   loop
+   fetch records into fname,salary,dno,eno;
+   if records%found then
+   if dno=10 then
+   insert into sales values(eno,fname,salary);
+   end if;
+   if dno=20 then
+   insert into HR values(eno,fname,salary);
+   end if;
+   else
+   exit;
+   end if;
+   end loop;
+   close records;
+   end;
+   /

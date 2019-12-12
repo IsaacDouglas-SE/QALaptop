@@ -1,0 +1,35 @@
+Connected, host fingerprint: ssh-rsa 0 6E:B0:F3:3A:90:7A:1E:89:B2:5E:E6:72:7E:06
+:DC:FA:6A:B6:F5:22:98:13:53:39:69:AD:74:E1:BD:55:C3:F6
+Welcome to Ubuntu 16.04.6 LTS (GNU/Linux 4.15.0-1047-gcp x86_64)
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+0 packages can be updated.
+0 updates are security updates.
+New release '18.04.3 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+Last login: Tue Oct 29 13:31:35 2019 from 74.125.73.100
+isaac_e_douglas@first-project:~$ cs simple-project/server/
+The program 'cs' is currently not installed. To run 'cs' please ask your administrator to install the package 'csound'
+isaac_e_douglas@first-project:~$ cd simple-project/server/
+isaac_e_douglas@first-project:~/simple-project/server$ ls
+Dockerfile  pom.xml  src  target
+isaac_e_douglas@first-project:~/simple-project/server$ cd target/
+isaac_e_douglas@first-project:~/simple-project/server/target$ cd ..
+isaac_e_douglas@first-project:~/simple-project/server$ ll
+total 28
+drwxrwxr-x 4 isaac_e_douglas isaac_e_douglas 4096 Oct 29 12:14 ./
+drwxrwxr-x 5 isaac_e_douglas isaac_e_douglas 4096 Oct 29 11:29 ../
+-rw-rw-r-- 1 isaac_e_douglas isaac_e_douglas  119 Oct 29 11:29 Dockerfile
+-rw-rw-r-- 1 isaac_e_douglas isaac_e_douglas    9 Oct 29 11:29 .gitignore
+-rw-rw-r-- 1 isaac_e_douglas isaac_e_douglas 2912 Oct 29 11:29 pom.xml
+drwxrwxr-x 4 isaac_e_douglas isaac_e_douglas 4096 Oct 29 11:29 src/
+drwxrwxr-x 8 isaac_e_douglas isaac_e_douglas 4096 Oct 29 12:14 target/
+isaac_e_douglas@first-project:~/simple-project/server$ cd target/
+isaac_e_douglas@first-project:~/simple-project/server/target$ java -jar notes.jar
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/

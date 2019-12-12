@@ -1,0 +1,36 @@
+isaac_e_douglas@first-project:~$ ls
+isaac_e_douglas@first-project:~$ pwd
+/home/isaac_e_douglas
+isaac_e_douglas@first-project:~$ touch project
+isaac_e_douglas@first-project:~$ ls
+project
+isaac_e_douglas@first-project:~$ sudo apt update
+Get:1 http://archive.canonical.com/ubuntu xenial InRelease [11.5 kB]
+Hit:2 http://europe-west2-a.gce.clouds.archive.ubuntu.com/ubuntu xenial InRelease
+Get:3 http://europe-west2-a.gce.clouds.archive.ubuntu.com/ubuntu xenial-updates InRelease [109 kB]
+Get:4 http://europe-west2-a.gce.clouds.archive.ubuntu.com/ubuntu xenial-backports InRelease [107 kB]                              
+Get:5 http://archive.canonical.com/ubuntu xenial/partner amd64 Packages [3,144 B]                               
+Get:6 http://archive.canonical.com/ubuntu xenial/partner Translation-en [1,620 B]              
+Get:7 http://security.ubuntu.com/ubuntu xenial-security InRelease [109 kB]                     
+Get:8 http://europe-west2-a.gce.clouds.archive.ubuntu.com/ubuntu xenial/universe amd64 Packages [7,532 kB]                                
+Get:9 http://europe-west2-a.gce.clouds.archive.ubuntu.com/ubuntu xenial/universe Translation-en [4,354 kB]                                
+Get:10 http://europe-west2-a.gce.clouds.archive.ubuntu.com/ubuntu xenial/multiverse amd64 Packages [144 kB]                     
+Get:11 http://europe-west2-a.gce.clouds.archive.ubuntu.com/ubuntu xenial/multiverse Translation-en [106 kB]                     
+Get:12 http://europe-west2-a.gce.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 Packages [1,055 kB]                 
+Get:13 http://europe-west2-a.gce.clouds.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 Packages [768 kB]               
+Get:14 http://europe-west2-a.gce.clouds.archive.ubuntu.com/ubuntu xenial-updates/universe Translation-en [322 kB]
+Get:15 http://europe-west2-a.gce.clouds.archive.ubuntu.com/ubuntu xenial-updates/multiverse amd64 Packages [16.8 kB]
+Get:16 http://europe-west2-a.gce.clouds.archive.ubuntu.com/ubuntu xenial-updates/multiverse Translation-en [8,468 B]            
+Get:17 http://europe-west2-a.gce.clouds.archive.ubuntu.com/ubuntu xenial-backports/main amd64 Packages [7,280 B]                
+Get:18 http://europe-west2-a.gce.clouds.archive.ubuntu.com/ubuntu xenial-backports/main Translation-en [4,456 B]                
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.9.RELEASE)
+2019-10-29 12:24:55.442  INFO 11972 --- [           main] com.qa.notes.Application                 : Starting Application on first-project with PID 11972 (/home/isa
+ac_e_douglas/simple-project/server/target/notes.jar started by isaac_e_douglas in /home/isaac_e_douglas/simple-project/server/target)
+2019-10-29 12:24:55.449  INFO 11972 --- [           main] com.qa.notes.Application                 : No active profile set, falling back to default profiles: defaul
+t
+2019-10-29 12:24:57.608  INFO 11972 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-29 12:24:57.784  INFO 11972 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 149ms. Found 1 repo
+sitory interfaces.

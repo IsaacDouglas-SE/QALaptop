@@ -1,0 +1,12 @@
+class App extends Component {
+state = {
+  anything:[]
+}
+
+
+buttonClick(){
+console.log("hi");
+
+fetch("/ShowAll")
+.then(data => this.setState({anything:data});
+console.log(this.state.anything);

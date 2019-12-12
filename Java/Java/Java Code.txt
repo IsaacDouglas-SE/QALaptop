@@ -1,0 +1,97 @@
+Microsoft Windows [Version 10.0.17763.737]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Users\admin>dir
+ Volume in drive C is Windows
+ Volume Serial Number is FEED-EB72
+
+ Directory of C:\Users\admin
+
+24/09/2019  10:56    <DIR>          .
+24/09/2019  10:56    <DIR>          ..
+27/09/2019  09:32    <DIR>          .VirtualBox
+24/09/2019  20:38    <DIR>          3D Objects
+24/09/2019  20:38    <DIR>          Contacts
+27/09/2019  09:50    <DIR>          Desktop
+25/09/2019  16:24    <DIR>          Documents
+24/09/2019  20:38    <DIR>          Downloads
+24/09/2019  20:38    <DIR>          Favorites
+24/09/2019  20:38    <DIR>          Links
+24/09/2019  20:38    <DIR>          Music
+24/09/2019  08:59    <DIR>          OneDrive
+24/09/2019  20:38    <DIR>          Pictures
+24/09/2019  20:38    <DIR>          Saved Games
+24/09/2019  20:38    <DIR>          Searches
+25/09/2019  16:21    <DIR>          Videos
+24/09/2019  10:56    <DIR>          VirtualBox VMs
+               0 File(s)              0 bytes
+              17 Dir(s)  68,095,545,344 bytes free
+
+C:\Users\admin>cd Desktop
+
+C:\Users\admin\Desktop>dir
+ Volume in drive C is Windows
+ Volume Serial Number is FEED-EB72
+
+ Directory of C:\Users\admin\Desktop
+
+27/09/2019  09:50    <DIR>          .
+27/09/2019  09:50    <DIR>          ..
+26/09/2019  08:59             4,758 Code.txt
+26/09/2019  10:17           205,322 Code1.txt
+27/09/2019  09:31             3,657 Code2.rtf
+26/09/2019  16:06            11,078 code3.txt
+21/06/2016  21:08     7,857,038,848 DeveloperDaysVM2016-06-02_13.ova
+24/09/2019  18:26            47,678 IRONman.png
+24/09/2019  13:26            13,088 Isaac.jpg
+27/09/2019  09:51    <DIR>          Java
+30/08/2019  13:50             1,446 Microsoft Edge.lnk
+24/09/2019  18:30            74,502 Octododge01.xml
+27/02/2019  11:06       114,463,232 VirtualBox-5.2.26-128414-Win.exe
+              10 File(s)  7,971,863,609 bytes
+               3 Dir(s)  68,095,315,968 bytes free
+
+C:\Users\admin\Desktop>cd java
+
+C:\Users\admin\Desktop\Java>dir
+ Volume in drive C is Windows
+ Volume Serial Number is FEED-EB72
+
+ Directory of C:\Users\admin\Desktop\Java
+
+27/09/2019  09:51    <DIR>          .
+27/09/2019  09:51    <DIR>          ..
+27/09/2019  09:51               137 First.Java
+               1 File(s)            137 bytes
+               2 Dir(s)  68,095,315,968 bytes free
+
+C:\Users\admin\Desktop\Java>java -version
+java version "1.8.0_221"
+Java(TM) SE Runtime Environment (build 1.8.0_221-b11)
+Java HotSpot(TM) Client VM (build 25.221-b11, mixed mode)
+
+C:\Users\admin\Desktop\Java>java First.Java
+Error: Could not find or load main class First.Java
+
+C:\Users\admin\Desktop\Java>First.Java
+
+C:\Users\admin\Desktop\Java>First.JAva
+
+C:\Users\admin\Desktop\Java>First.Java
+
+C:\Users\admin\Desktop\Java>dir
+ Volume in drive C is Windows
+ Volume Serial Number is FEED-EB72
+
+ Directory of C:\Users\admin\Desktop\Java
+
+27/09/2019  09:51    <DIR>          .
+27/09/2019  09:51    <DIR>          ..
+27/09/2019  09:51               137 First.Java
+               1 File(s)            137 bytes
+               2 Dir(s)  66,697,908,224 bytes free
+
+C:\Users\admin\Desktop\Java>Microsoft Windows [Version 10.0.17763.737]
+'Microsoft' is not recognized as an internal or external command,
+operable program or batch file.
+

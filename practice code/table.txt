@@ -1,0 +1,30 @@
+Isaac Douglas	LWB	99	20	Series A	Napoli	England	Special	1
+Kalidou Koulibaly	CB	89	59000	Series A	Napoli	Senegal	Gold	2
+Lorenzo Insigne	CAM	87	66000	Series A	Napoli	Italy	Gold	3
+Dries Mertens	ST	87	120000	Series A	Napoli	Belgium	Gold	4
+Allan	CDM	85	55000	Series A	Napoli	Brazil	Gold	5
+Kostas Manolas	CB	85	69000	Series A	Napoli	Greece	Gold	6
+José Callejón	RM	84	14000	Series A	Napoli	Spain	Gold	7
+
+Create Table fifa(
+    playername char(30),
+    position char(3),
+    rating int(3),
+    price int(16),
+    league char(30),
+    club char(30),
+    nationality char(30),
+    quality char(30)
+    );
+
+insert into fifa values("Isaac Douglas",	"LWB",	99,	20,	"Series A",	"Napoli",	"England",	"Special")
+insert into fifa values("Kalidou Koulibaly","CB",89,59000,"Series A","Napoli","Senegal","Gold")
+
+drop table fifa
+
+select * from fifa
+
+ALTER TABLE fifa ADD id INT NOT NULL AUTO_INCREMENT PRIMARY KEY
+
+alter table fifa drop primary key;
+								

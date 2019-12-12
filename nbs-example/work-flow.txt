@@ -1,0 +1,42 @@
+Workflow:
+Step 1 - Create ppt template 
+Step 2 - Create wireframes
+Step 3 - Plan project on a tool like Trello
+Step 4 - Research and create a DB
+	a) Decide on a DB
+	b) Create the table
+	c) Enter some data
+Step 5 - Research and create project structure
+	a) Decide what tooling you want to use
+	b) Create a Github repo
+	c) Create a new maven project and base structure
+		i) Click create a simple project and press next
+		2) Enter the group id and artifact id for example. Group id: com.qa.trainer, Artifact id trainerapp.
+		3) Update pom.xml
+		4) Create application.properties and add DB config
+		5) Add package structure
+		6) Add skeleton objects
+		7) Push initial code to github (remember add .gitignore)
+Step 6 - Code api - suggestion create a new branch for each component
+	a) Create spring boot app, rest component and trainer entity
+	b) Test rest interface, database and commit to git
+	c) Create business service component
+	d) Test and commit to github
+	e) Create repository component 
+	f) Test and commit to github
+	g) Integrate the API so it adds data to the DB
+	h) Test all CRUD functionality and commit to github
+	******For you to do yourself***********************
+	i) Tidy up code
+	h) Test all functionality and commit to github
+Step 7 - Code out the front-end
+	a) Decide what tooling you want to use
+	b) Create front-end folder structure, build an example page and link to any external pages.
+	Tip - Create a simple JS function to make sure everything is integrated 
+	c) Create your web pages and make sure JS still works
+	d) Research how you are going to integrate
+	e) Integrate the solution and test
+		- See for an example: https://github.com/scrappy1987/nbs-trainer-solution
+Step 8 - Finish ppt
+Step 9 - Celebrate because you are amazing
+Step 10 - Celebrate because you are amazing 

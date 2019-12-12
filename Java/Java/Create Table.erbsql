@@ -1,0 +1,5 @@
+ create table items1(
+  2  item char(40),
+  3  item_code number(3),
+  4  item_qty number(3)
+  5);
